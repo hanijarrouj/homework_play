@@ -1,0 +1,19 @@
+
+@(message: String)
+
+@main("Equation") {
+    
+ 
+    
+    <form method="get" action="@routes.Application.index()">
+    <table>
+	    <tr><td>a<input type="text" id="txt_a" name="txt_a"></td></tr>
+	  <tr><td>  b<input type="text" id="txt_b" name="txt_b"></td></tr>
+	   <tr><td> c<input type="text" id="txt_c" name="txt_c"></td></tr>
+	    
+	   <tr><td> <input type="submit" value="getRoots"></td></tr>
+	    </table>
+	</form>
+	<br/><br/>
+	@message
+}
